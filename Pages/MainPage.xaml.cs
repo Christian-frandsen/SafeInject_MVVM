@@ -1,12 +1,13 @@
-﻿public partial class MainPage : ContentPage
-{
-    // Denne metode kaldes automatisk
-    public MainPage()
-    {
-        // Indlæser alt, hvad der er defineret i XAML-filen
-        InitializeComponent();
+﻿using Microsoft.Maui.Controls;
 
-        // Det gør, at XAML kan se ViewModel og binde til dens egenskaber
-        BindingContext = new ViewModel();
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent(); // ← Denne initialiserer alt fra XAML-filen
+
+            // Opretter og tildeler ViewModel som DataContext (BindingContext)
+            BindingContext = new ViewModel();
+        }
     }
-}
+

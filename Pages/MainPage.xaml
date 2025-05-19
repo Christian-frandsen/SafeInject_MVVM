@@ -1,15 +1,9 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="slettestmaui.MainPage"
-             xmlns:vm="clr-namespace:slettestmaui"
-             x:DataType="vm:ViewModel">
-    <!-- Gør bindings typesikre og giver IntelliSense -->
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="slettestmaui.MainPage"
+             xmlns:vm="clr-namespace:slettestmaui"
+             x:DataType="vm:ViewModel">
 
-       
-    <!-- Billedet henter sin kilde fra ViewModel.Image via databinding -->
-       
-    <!-- Når ViewModel ændrer egenskaben "Image", vises det nye billede her -->
-       
     <Image Source="{Binding Image}" Aspect="AspectFit" />
+
 </ContentPage>
